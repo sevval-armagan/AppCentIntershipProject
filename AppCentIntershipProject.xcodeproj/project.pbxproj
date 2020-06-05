@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,13 @@
 		161C551D248A4003002C14B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 161C551B248A4003002C14B5 /* Main.storyboard */; };
 		161C551F248A4009002C14B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 161C551E248A4009002C14B5 /* Assets.xcassets */; };
 		161C5522248A4009002C14B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 161C5520248A4009002C14B5 /* LaunchScreen.storyboard */; };
+		161C552A248A40CE002C14B5 /* flickerImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161C5529248A40CE002C14B5 /* flickerImageCell.swift */; };
+		161C552F248A40F4002C14B5 /* flickerImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161C552E248A40F4002C14B5 /* flickerImageModel.swift */; };
+		161C5532248A418A002C14B5 /* UPCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161C5531248A418A002C14B5 /* UPCarouselFlowLayout.swift */; };
+		161C5535248A41C5002C14B5 /* FlickerImageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161C5534248A41C5002C14B5 /* FlickerImageVM.swift */; };
+		161C5538248A4610002C14B5 /* ImageCacheAndDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161C5537248A4610002C14B5 /* ImageCacheAndDownload.swift */; };
+		161C553C248AF613002C14B5 /* ImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161C553B248AF613002C14B5 /* ImageVC.swift */; };
+		CD2E506DA2442AB16D6D0B5F /* Pods_AppCentIntershipProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B3F9681957B271B3A2C42D5 /* Pods_AppCentIntershipProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,15 @@
 		161C551E248A4009002C14B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		161C5521248A4009002C14B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		161C5523248A4009002C14B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		161C5529248A40CE002C14B5 /* flickerImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flickerImageCell.swift; sourceTree = "<group>"; };
+		161C552E248A40F4002C14B5 /* flickerImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flickerImageModel.swift; sourceTree = "<group>"; };
+		161C5531248A418A002C14B5 /* UPCarouselFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UPCarouselFlowLayout.swift; sourceTree = "<group>"; };
+		161C5534248A41C5002C14B5 /* FlickerImageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerImageVM.swift; sourceTree = "<group>"; };
+		161C5537248A4610002C14B5 /* ImageCacheAndDownload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCacheAndDownload.swift; sourceTree = "<group>"; };
+		161C553B248AF613002C14B5 /* ImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageVC.swift; sourceTree = "<group>"; };
+		4B3F9681957B271B3A2C42D5 /* Pods_AppCentIntershipProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppCentIntershipProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DBE80DCB7D32556EAF51E04 /* Pods-AppCentIntershipProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppCentIntershipProject.release.xcconfig"; path = "Target Support Files/Pods-AppCentIntershipProject/Pods-AppCentIntershipProject.release.xcconfig"; sourceTree = "<group>"; };
+		FB8681FE439766C92F2930F5 /* Pods-AppCentIntershipProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppCentIntershipProject.debug.xcconfig"; path = "Target Support Files/Pods-AppCentIntershipProject/Pods-AppCentIntershipProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +47,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD2E506DA2442AB16D6D0B5F /* Pods_AppCentIntershipProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CD8A0B7C538C7F22DE73F81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B3F9681957B271B3A2C42D5 /* Pods_AppCentIntershipProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		161C5509248A4003002C14B5 = {
 			isa = PBXGroup;
 			children = (
 				161C5514248A4003002C14B5 /* AppCentIntershipProject */,
 				161C5513248A4003002C14B5 /* Products */,
+				1B191667DA81977F106701F5 /* Pods */,
+				0CD8A0B7C538C7F22DE73F81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +83,78 @@
 		161C5514248A4003002C14B5 /* AppCentIntershipProject */ = {
 			isa = PBXGroup;
 			children = (
+				161C5536248A45F9002C14B5 /* ImageCache&Download */,
+				161C5533248A41AE002C14B5 /* ViewModel */,
+				161C5530248A4126002C14B5 /* CollectionViewFlowLayout */,
+				161C552D248A40E6002C14B5 /* Model */,
+				161C552C248A40D9002C14B5 /* Controller */,
+				161C552B248A40D2002C14B5 /* View */,
 				161C5515248A4003002C14B5 /* AppDelegate.swift */,
 				161C5517248A4003002C14B5 /* SceneDelegate.swift */,
-				161C5519248A4003002C14B5 /* ViewController.swift */,
 				161C551B248A4003002C14B5 /* Main.storyboard */,
 				161C551E248A4009002C14B5 /* Assets.xcassets */,
 				161C5520248A4009002C14B5 /* LaunchScreen.storyboard */,
 				161C5523248A4009002C14B5 /* Info.plist */,
 			);
 			path = AppCentIntershipProject;
+			sourceTree = "<group>";
+		};
+		161C552B248A40D2002C14B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				161C5529248A40CE002C14B5 /* flickerImageCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		161C552C248A40D9002C14B5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				161C5519248A4003002C14B5 /* ViewController.swift */,
+				161C553B248AF613002C14B5 /* ImageVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		161C552D248A40E6002C14B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				161C552E248A40F4002C14B5 /* flickerImageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		161C5530248A4126002C14B5 /* CollectionViewFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				161C5531248A418A002C14B5 /* UPCarouselFlowLayout.swift */,
+			);
+			path = CollectionViewFlowLayout;
+			sourceTree = "<group>";
+		};
+		161C5533248A41AE002C14B5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				161C5534248A41C5002C14B5 /* FlickerImageVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		161C5536248A45F9002C14B5 /* ImageCache&Download */ = {
+			isa = PBXGroup;
+			children = (
+				161C5537248A4610002C14B5 /* ImageCacheAndDownload.swift */,
+			);
+			path = "ImageCache&Download";
+			sourceTree = "<group>";
+		};
+		1B191667DA81977F106701F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB8681FE439766C92F2930F5 /* Pods-AppCentIntershipProject.debug.xcconfig */,
+				4DBE80DCB7D32556EAF51E04 /* Pods-AppCentIntershipProject.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +164,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 161C5526248A4009002C14B5 /* Build configuration list for PBXNativeTarget "AppCentIntershipProject" */;
 			buildPhases = (
+				056E617A46B327FAA44BE40E /* [CP] Check Pods Manifest.lock */,
 				161C550E248A4003002C14B5 /* Sources */,
 				161C550F248A4003002C14B5 /* Frameworks */,
 				161C5510248A4003002C14B5 /* Resources */,
+				55AE3D042B86583053195A96 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +225,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		056E617A46B327FAA44BE40E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppCentIntershipProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55AE3D042B86583053195A96 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppCentIntershipProject/Pods-AppCentIntershipProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppCentIntershipProject/Pods-AppCentIntershipProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppCentIntershipProject/Pods-AppCentIntershipProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		161C550E248A4003002C14B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				161C5538248A4610002C14B5 /* ImageCacheAndDownload.swift in Sources */,
+				161C552A248A40CE002C14B5 /* flickerImageCell.swift in Sources */,
+				161C5535248A41C5002C14B5 /* FlickerImageVM.swift in Sources */,
 				161C551A248A4003002C14B5 /* ViewController.swift in Sources */,
+				161C5532248A418A002C14B5 /* UPCarouselFlowLayout.swift in Sources */,
 				161C5516248A4003002C14B5 /* AppDelegate.swift in Sources */,
 				161C5518248A4003002C14B5 /* SceneDelegate.swift in Sources */,
+				161C552F248A40F4002C14B5 /* flickerImageModel.swift in Sources */,
+				161C553C248AF613002C14B5 /* ImageVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +422,7 @@
 		};
 		161C5527248A4009002C14B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB8681FE439766C92F2930F5 /* Pods-AppCentIntershipProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +440,7 @@
 		};
 		161C5528248A4009002C14B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DBE80DCB7D32556EAF51E04 /* Pods-AppCentIntershipProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

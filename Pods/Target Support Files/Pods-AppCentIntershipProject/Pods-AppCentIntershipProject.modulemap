@@ -1,0 +1,6 @@
+framework module Pods_AppCentIntershipProject {
+  umbrella header "Pods-AppCentIntershipProject-umbrella.h"
+
+  export *
+  module * { export * }
+}
