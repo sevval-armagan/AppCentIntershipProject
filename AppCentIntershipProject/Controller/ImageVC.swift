@@ -25,7 +25,7 @@ class ImageVC: UIViewController {
         view.addSubview(flickerImage)
         flickerImage.contentMode = .scaleAspectFit
         flickerImage.snp.makeConstraints { (make) in
-            make.top.equalTo(view)
+            make.top.equalTo(view).offset((navigationController?.navigationBar.frame.height)!)
             make.leading.equalTo(view)
             make.trailing.equalTo(view)
             make.height.equalTo(view)
